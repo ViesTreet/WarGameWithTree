@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://dcmj33gxec6os"]
+
+[ext_resource type="PackedScene" uid="uid://dxhducc3ni4vq" path="res://source/Pistol.fbx" id="1_bttkv"]
+[ext_resource type="Texture2D" uid="uid://c231a20vjo8wl" path="res://textures/Pistol_DefaultMaterial_BaseColor.png" id="2_6e3nq"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_646vd"]
+albedo_texture = ExtResource("2_6e3nq")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_78vgs"]
+albedo_texture = ExtResource("2_6e3nq")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_onp47"]
+albedo_texture = ExtResource("2_6e3nq")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a4mtk"]
+albedo_texture = ExtResource("2_6e3nq")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_31i3s"]
+albedo_texture = ExtResource("2_6e3nq")
+
+[node name="Pistol" unique_id=555757438 instance=ExtResource("1_bttkv")]
+
+[node name="Cube" parent="." index="0" unique_id=1521836632]
+surface_material_override/0 = SubResource("StandardMaterial3D_646vd")
+
+[node name="Cylinder" parent="." index="1" unique_id=762945227]
+surface_material_override/0 = SubResource("StandardMaterial3D_78vgs")
+
+[node name="Plane_002" parent="." index="2" unique_id=14227221]
+surface_material_override/0 = SubResource("StandardMaterial3D_onp47")
+
+[node name="Cylinder_015" parent="." index="3" unique_id=657066747]
+surface_material_override/0 = SubResource("StandardMaterial3D_a4mtk")
+
+[node name="Plane" parent="." index="4" unique_id=1486693295]
+surface_material_override/0 = SubResource("StandardMaterial3D_31i3s")
